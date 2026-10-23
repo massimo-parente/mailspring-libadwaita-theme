@@ -7,14 +7,15 @@
 // New email button
 //---------------------------------
 .toolbar-RootSidebar .item-compose img.content-mask {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/edit.svg") !important;
+	mask-image: data-uri("papirus/edit.svg") !important;
 }
 
 //---------------------------------
 // Hamburger button (Custom Window Frame)
 //---------------------------------
-body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="windows-menu-icon.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/accounts.svg") !important;
+body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="windows-menu-icon.png"],
+body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[src*="/windows-menu-icon@"] {
+	mask-image: data-uri("papirus/accounts.svg") !important;
 }
 
 //------------------------------------------------------------
@@ -23,8 +24,9 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 //---------------------------------
 // Account switcher
 //---------------------------------
-.account-switcher img.content-dark[alt="account-switcher-dropdown.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/accounts.svg") !important;
+.account-switcher img.content-dark[alt="account-switcher-dropdown.png"],
+.account-switcher img.content-dark[src*="/account-switcher-dropdown@"] {
+	mask-image: data-uri("papirus/accounts.svg") !important;
 	mask-size: 16px !important;
 	width: 16px !important;
 	height: 16px !important;
@@ -39,7 +41,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	padding: 9px 10px 11px !important;
 
 	img.content-mask {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/add.svg") !important;
+		mask-image: data-uri("papirus/add.svg") !important;
 		width: 16px !important;
 		height: 16px !important;
 		zoom: 1 !important;
@@ -49,61 +51,76 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 //---------------------------------
 // List items
 //---------------------------------
-.outline-view .item img.content-mask[alt="inbox.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/inbox.svg") !important;
+.outline-view .item img.content-mask[alt="inbox.png"],
+.outline-view .item img.content-mask[src*="/inbox@"] {
+	mask-image: data-uri("papirus/inbox.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="unread.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/unread.svg") !important;
+.outline-view .item img.content-mask[alt="unread.png"],
+.outline-view .item img.content-mask[src*="/unread@"] {
+	mask-image: data-uri("papirus/unread.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="starred.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/star.svg") !important;
+.outline-view .item img.content-mask[alt="starred.png"],
+.outline-view .item img.content-mask[src*="/starred@"] {
+	mask-image: data-uri("papirus/star.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="snoozed.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/snoozed.svg") !important;
+.outline-view .item img.content-mask[alt="snoozed.png"],
+.outline-view .item img.content-mask[src*="/snoozed@"] {
+	mask-image: data-uri("papirus/snoozed.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="reminders.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/alarm.svg") !important;
+.outline-view .item img.content-mask[alt="reminders.png"],
+.outline-view .item img.content-mask[src*="/reminders@"] {
+	mask-image: data-uri("papirus/alarm.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="important.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/important.svg") !important;
+.outline-view .item img.content-mask[alt="important.png"],
+.outline-view .item img.content-mask[src*="/important@"] {
+	mask-image: data-uri("papirus/important.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="sent.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/send.svg") !important;
+.outline-view .item img.content-mask[alt="sent.png"],
+.outline-view .item img.content-mask[src*="/sent@"] {
+	mask-image: data-uri("papirus/send.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="archive.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/archive.svg") !important;
+.outline-view .item img.content-mask[alt="archive.png"],
+.outline-view .item img.content-mask[src*="/archive@"] {
+	mask-image: data-uri("papirus/archive.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="spam.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/spam.svg") !important;
+.outline-view .item img.content-mask[alt="spam.png"],
+.outline-view .item img.content-mask[src*="/spam@"] {
+	mask-image: data-uri("papirus/spam.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="trash.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/trash.svg") !important;
+.outline-view .item img.content-mask[alt="trash.png"],
+.outline-view .item img.content-mask[src*="/trash@"] {
+	mask-image: data-uri("papirus/trash.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="drafts.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/drafts.svg") !important;
+.outline-view .item img.content-mask[alt="drafts.png"],
+.outline-view .item img.content-mask[src*="/drafts@"] {
+	mask-image: data-uri("papirus/drafts.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="activity.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/activity.svg") !important;
+.outline-view .item img.content-mask[alt="activity.png"],
+.outline-view .item img.content-mask[src*="/activity@"] {
+	mask-image: data-uri("papirus/activity.svg") !important;
 }
 
-.outline-view .item img.content-mask[alt="folder.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/folder.svg") !important;
+.outline-view .item img.content-mask[alt="folder.png"],
+.outline-view .item img.content-mask[src*="/folder@"] {
+	mask-image: data-uri("papirus/folder.svg") !important;
 }
 
 .outline-view .item img.content-mask[alt="label.png"],
-.outline-view .item img.content-mask[alt="tag.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/label.svg") !important;
+.outline-view .item img.content-mask[src*="/label@"],
+.outline-view .item img.content-mask[alt="tag.png"],
+.outline-view .item img.content-mask[src*="/tag@"] {
+	mask-image: data-uri("papirus/label.svg") !important;
 }
 
 //------------------------------------------------------------
@@ -113,14 +130,14 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Search box
 //---------------------------------
 .thread-search-bar .search-accessory {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/search.svg") !important;
+	mask-image: data-uri("papirus/search.svg") !important;
 	mask-size: 16px !important;
 	width: 16px !important;
 	height: 16px !important;
 	padding-top: 16px !important;
 
 	&.clear {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/search-clear.svg") !important;
+		mask-image: data-uri("papirus/search-clear.svg") !important;
 		padding-top: 16px !important;
 	}
 }
@@ -133,40 +150,49 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	width: 16px !important;
 	height: 16px !important;
 
-	&[alt="toolbar-archive.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/archive.svg") !important;
+	&[alt="toolbar-archive.png"],
+	&[src*="/toolbar-archive@"] {
+		mask-image: data-uri("papirus/archive.svg") !important;
 	}
 	
-	&[alt="toolbar-spam.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/spam.svg") !important;
+	&[alt="toolbar-spam.png"],
+	&[src*="/toolbar-spam@"] {
+		mask-image: data-uri("papirus/spam.svg") !important;
 	}
 	
-	&[alt="toolbar-not-spam.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/not-spam.svg") !important;
+	&[alt="toolbar-not-spam.png"],
+	&[src*="/toolbar-not-spam@"] {
+		mask-image: data-uri("papirus/not-spam.svg") !important;
 	}
 
-	&[alt="toolbar-trash.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/trash.svg") !important;
+	&[alt="toolbar-trash.png"],
+	&[src*="/toolbar-trash@"] {
+		mask-image: data-uri("papirus/trash.svg") !important;
 	}
 	
-	&[alt="toolbar-star.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/star.svg") !important;
+	&[alt="toolbar-star.png"],
+	&[src*="/toolbar-star@"] {
+		mask-image: data-uri("papirus/star.svg") !important;
 	}
 	
-	&[alt="toolbar-star-selected.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
+	&[alt="toolbar-star-selected.png"],
+	&[src*="/toolbar-star-selected@"] {
+		mask-image: data-uri("papirus/not-star.svg") !important;
 	}
 	
-	&[alt="toolbar-markasunread.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/unread.svg") !important;
+	&[alt="toolbar-markasunread.png"],
+	&[src*="/toolbar-markasunread@"] {
+		mask-image: data-uri("papirus/unread.svg") !important;
 	}
 	
-	&[alt="toolbar-markasread.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/read.svg") !important;
+	&[alt="toolbar-markasread.png"],
+	&[src*="/toolbar-markasread@"] {
+		mask-image: data-uri("papirus/read.svg") !important;
 	}
 	
-	&[alt="toolbar-movetofolder.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/movetofolder.svg") !important;
+	&[alt="toolbar-movetofolder.png"],
+	&[src*="/toolbar-movetofolder@"] {
+		mask-image: data-uri("papirus/movetofolder.svg") !important;
 	}	
 }
 
@@ -178,8 +204,9 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	width: 16px !important;
 	height: 16px !important;
 
-	&[alt="icon-composer-trash.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/trash.svg") !important;
+	&[alt="icon-composer-trash.png"],
+	&[src*="/icon-composer-trash@"] {
+		mask-image: data-uri("papirus/trash.svg") !important;
 	}
 }
 
@@ -190,13 +217,13 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Attachment icon
 //---------------------------------
 .draft-list .thread-icon.thread-icon-attachment {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/attachment.svg") !important;
+	mask-image: data-uri("papirus/attachment.svg") !important;
 	mask-size: 16px !important;
 }
 
 .thread-list .list-container .list-item {
 	.thread-icon.thread-icon-attachment {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/attachment.svg") !important;
+		mask-image: data-uri("papirus/attachment.svg") !important;
 		mask-size: 16px !important;
 	}
 	
@@ -205,7 +232,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	//---------------------------------
 	.draft-icon {
 		zoom: 1 !important;
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/edit.svg") !important;
+		mask-image: data-uri("papirus/edit.svg") !important;
 		mask-size: 16px !important;
 		width: 16px !important;
 		height: 16px !important;
@@ -217,18 +244,18 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	// None icon
 	//---------------------------------
 	.thread-icon-none {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
+		mask-image: data-uri("papirus/not-star.svg") !important;
 	}
 
 	//---------------------------------
 	// Star icon
 	//---------------------------------
 	.thread-icon-star-on-hover:hover {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
+		mask-image: data-uri("papirus/not-star.svg") !important;
 	}
 
 	.thread-icon.thread-icon-star {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/star.svg") !important;
+		mask-image: data-uri("papirus/star.svg") !important;
 	}
 
 	//---------------------------------
@@ -242,19 +269,19 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	// Replied/forwarded icons
 	//---------------------------------
 	.thread-icon.thread-icon-replied {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/reply.svg") !important;
+		mask-image: data-uri("papirus/reply.svg") !important;
 		mask-size: 16px !important;
 	}
 
 	.thread-icon.thread-icon-forwarded {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/forward.svg") !important;
+		mask-image: data-uri("papirus/forward.svg") !important;
 		mask-size: 16px !important;
 	}
 
 	.thread-icon.thread-icon-replied,
 	.thread-icon.thread-icon-forwarded {
 		&:hover {
-			mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
+			mask-image: data-uri("papirus/not-star.svg") !important;
 		}
 	}
 }
@@ -263,7 +290,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Important icon
 //---------------------------------
 .mail-important-icon {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/important.svg") !important;
+	mask-image: data-uri("papirus/important.svg") !important;
 	opacity: 0.3 !important;
 
 	&.enabled.active {
@@ -293,49 +320,61 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 //------------------------------------------------------------
 // Messagelist toolbar
 //------------------------------------------------------------
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-archive.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/archive.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-archive.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-archive@"] {
+	mask-image: data-uri("papirus/archive.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-trash.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/trash.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-trash.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-trash@"] {
+	mask-image: data-uri("papirus/trash.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-spam.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/spam.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-spam.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-spam@"] {
+	mask-image: data-uri("papirus/spam.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-not-spam.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/not-spam.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-not-spam.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-not-spam@"] {
+	mask-image: data-uri("papirus/not-spam.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-star.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/star.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-star.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-star@"] {
+	mask-image: data-uri("papirus/star.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-star-selected.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-star-selected.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-star-selected@"] {
+	mask-image: data-uri("papirus/not-star.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-markasunread.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/unread.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-markasunread.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-markasunread@"] {
+	mask-image: data-uri("papirus/unread.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-markasread.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/read.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-markasread.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-markasread@"] {
+	mask-image: data-uri("papirus/read.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-movetofolder.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/movetofolder.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-movetofolder.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-movetofolder@"] {
+	mask-image: data-uri("papirus/movetofolder.svg") !important;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-tag.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/label.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-tag.png"],
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-tag@"] {
+	mask-image: data-uri("papirus/label.svg") !important;
 }
 
 .sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-person-sidebar.png"],
-.toolbar-MessageListSidebar .btn-toolbar.mode-toggle.mode-false img.content-mask[alt="toolbar-person-sidebar.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/person.svg") !important;
+.sheet-toolbar .btn-toolbar img.content-mask[src*="/toolbar-person-sidebar@"],
+.toolbar-MessageListSidebar .btn-toolbar.mode-toggle.mode-false img.content-mask[alt="toolbar-person-sidebar.png"],
+.toolbar-MessageListSidebar .btn-toolbar.mode-toggle.mode-false img.content-mask[src*="/toolbar-person-sidebar@"] {
+	mask-image: data-uri("papirus/person.svg") !important;
 }
 
 .sheet-toolbar .message-toolbar-arrow.down,
@@ -349,12 +388,14 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	}
 }
 
-.sheet-toolbar .message-toolbar-arrow.down img.content-mask[alt="toolbar-down-arrow.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/down.svg") !important;
+.sheet-toolbar .message-toolbar-arrow.down img.content-mask[alt="toolbar-down-arrow.png"],
+.sheet-toolbar .message-toolbar-arrow.down img.content-mask[src*="/toolbar-down-arrow@"] {
+	mask-image: data-uri("papirus/down.svg") !important;
 }
 
-.sheet-toolbar .message-toolbar-arrow.up img.content-mask[alt="toolbar-up-arrow.png"] {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/up.svg") !important;
+.sheet-toolbar .message-toolbar-arrow.up img.content-mask[alt="toolbar-up-arrow.png"],
+.sheet-toolbar .message-toolbar-arrow.up img.content-mask[src*="/toolbar-up-arrow@"] {
+	mask-image: data-uri("papirus/up.svg") !important;
 }
 
 //---------------------------------
@@ -362,12 +403,14 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 //---------------------------------
 .category-picker-popover .item,
 .category-picker-dropdown .item {
-	img.content-mask[alt="undefined.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/folder.svg") !important;
+	img.content-mask[alt="undefined.png"],
+	img.content-mask[src=""] {
+		mask-image: data-uri("papirus/folder.svg") !important;
 	}
 
-	img.content-mask[alt="tag.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/label.svg") !important;
+	img.content-mask[alt="tag.png"],
+	img.content-mask[src*="/tag@"] {
+		mask-image: data-uri("papirus/label.svg") !important;
 	}
 }
 
@@ -383,24 +426,29 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	height: 16px !important;
 	zoom: 1 !important;
 
-	&[alt="collapse.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/collapse.svg") !important;
+	&[alt="collapse.png"],
+	&[src*="/collapse@"] {
+		mask-image: data-uri("papirus/collapse.svg") !important;
 	}
 
-	&[alt="expand.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/expand.svg") !important;
+	&[alt="expand.png"],
+	&[src*="/expand@"] {
+		mask-image: data-uri("papirus/expand.svg") !important;
 	}
 
-	&[alt="print.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/print.svg") !important;
+	&[alt="print.png"],
+	&[src*="/print@"] {
+		mask-image: data-uri("papirus/print.svg") !important;
 	}
 	
-	&[alt="thread-popout.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/popout.svg") !important;
+	&[alt="thread-popout.png"],
+	&[src*="/thread-popout@"] {
+		mask-image: data-uri("papirus/popout.svg") !important;
 	}
 	
-	&[alt="thread-popin.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/popin.svg") !important;
+	&[alt="thread-popin.png"],
+	&[src*="/thread-popin@"] {
+		mask-image: data-uri("papirus/popin.svg") !important;
 	}
 }
 
@@ -418,16 +466,19 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 
 #message-list .message-header .message-actions-wrap .button-dropdown.bordered .primary-item img.content-mask,
 #message-list .message-header .message-actions-wrap .button-dropdown .secondary-items .menu .item img.content-mask {
-	&[alt="ic-dropdown-reply.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/reply.svg") !important;
+	&[alt="ic-dropdown-reply.png"],
+	&[src*="/ic-dropdown-reply@"] {
+		mask-image: data-uri("papirus/reply.svg") !important;
 	}
 
-	&[alt="ic-dropdown-replyall.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/reply-all.svg") !important;
+	&[alt="ic-dropdown-replyall.png"],
+	&[src*="/ic-dropdown-replyall@"] {
+		mask-image: data-uri("papirus/reply-all.svg") !important;
 	}
 
-	&[alt="ic-dropdown-forward.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/forward.svg") !important;
+	&[alt="ic-dropdown-forward.png"],
+	&[src*="/ic-dropdown-forward@"] {
+		mask-image: data-uri("papirus/forward.svg") !important;
 	}
 }
 
@@ -435,7 +486,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	width: 28px !important;
 
 	img.content-mask {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/dropdown.svg") !important;
+		mask-image: data-uri("papirus/dropdown.svg") !important;
 	}
 }
 
@@ -448,12 +499,14 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	height: 16px !important;
 	zoom: 1 !important;
 
-	&[alt="attachment-quicklook.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/eye.svg") !important;
+	&[alt="attachment-quicklook.png"],
+	&[src*="/attachment-quicklook@"] {
+		mask-image: data-uri("papirus/eye.svg") !important;
 	}
 
-	&[alt="icon-attachment-download.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/download.svg") !important;
+	&[alt="icon-attachment-download.png"],
+	&[src*="/icon-attachment-download@"] {
+		mask-image: data-uri("papirus/download.svg") !important;
 	}
 }
 
@@ -461,7 +514,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Attachment download controls
 //---------------------------------
 .download-all .attachment-number img.content-mask {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/attachment.svg") !important;
+	mask-image: data-uri("papirus/attachment.svg") !important;
 	mask-size: 16px !important;
 	width: 16px !important;
 	height: 16px !important;
@@ -469,7 +522,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 }
 
 .download-all .download-all-action img.content-mask {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/download.svg") !important;
+	mask-image: data-uri("papirus/download.svg") !important;
 	mask-size: 16px !important;
 	width: 16px !important;
 	height: 16px !important;
@@ -480,7 +533,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Footer reply button
 //---------------------------------
 #message-list .footer-reply-area-wrap .footer-reply-area img.content-mask {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/reply.svg") !important;
+	mask-image: data-uri("papirus/reply.svg") !important;
 	mask-size: 16px !important;
 	width: 16px !important;
 	height: 16px !important;
@@ -491,7 +544,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Collapsed message attachment
 //---------------------------------
 #message-list .message-item-wrap.collapsed .message-item-area .collapsed-attachment {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/attachment.svg") !important;
+	mask-image: data-uri("papirus/attachment.svg") !important;
 	mask-size: 16px !important;
 	mask-position: 0px 5px !important;
 	width: 16px !important;
@@ -513,7 +566,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 				padding: 0 6px 0 9px !important;
 	
 				img.signature-button {
-					mask-image: url("mailspring://@{asset_path}/styles/papirus/signature.svg") !important;
+					mask-image: data-uri("papirus/signature.svg") !important;
 					width: 16px !important;
 					height: 16px !important;
 					zoom: 1 !important;
@@ -521,9 +574,9 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 				}
 	
 				&::after {
-					content: url("mailspring://@{asset_path}/styles/papirus/dummy.svg");
+					content: data-uri("papirus/dummy.svg");
 					mask-repeat: no-repeat;
-					mask-image: url("mailspring://@{asset_path}/styles/papirus/dropdown.svg");
+					mask-image: data-uri("papirus/dropdown.svg");
 					mask-size: 16px;
 					mask-position: 3px 1px;
 					background-color: @text_color;
@@ -534,8 +587,8 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 				background-image: none;
 
 				&::before {
-					content: url("mailspring://@{asset_path}/styles/papirus/dummy.svg");
-					mask-image: url("mailspring://@{asset_path}/styles/papirus/check.svg") !important;
+					content: data-uri("papirus/dummy.svg");
+					mask-image: data-uri("papirus/check.svg") !important;
 					mask-repeat: no-repeat;
 					mask-size: 16px;
 					mask-position: 0px 1px;
@@ -565,7 +618,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	.fa-list-ol:before,
 	.fa-list-ul:before,
 	.fa-text-height:before {
-		content: url("mailspring://@{asset_path}/styles/papirus/dummy.svg");
+		content: data-uri("papirus/dummy.svg");
 		mask-repeat: no-repeat;
 		mask-size: 16px;
 		mask-position: 0px 0px;
@@ -575,47 +628,47 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	}
 
 	.fa-bold:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-bold.svg");
+		mask-image: data-uri("papirus/format-bold.svg");
 	}
 
 	.fa-italic:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-italic.svg");
+		mask-image: data-uri("papirus/format-italic.svg");
 	}
 
 	.fa-underline:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-underline.svg");
+		mask-image: data-uri("papirus/format-underline.svg");
 	}
 
 	.fa-strikethrough:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-strikethrough.svg");
+		mask-image: data-uri("papirus/format-strikethrough.svg");
 	}
 
 	.fa-smile-o:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-emoji.svg");
+		mask-image: data-uri("papirus/format-emoji.svg");
 	}
 
 	.fa-link:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-link.svg");
+		mask-image: data-uri("papirus/format-link.svg");
 	}
 
 	.fa-quote-left:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-blockquote.svg");
+		mask-image: data-uri("papirus/format-blockquote.svg");
 	}
 
 	.fa-sticky-note-o:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-code.svg");
+		mask-image: data-uri("papirus/format-code.svg");
 	}
 
 	.fa-list-ol:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-number.svg");
+		mask-image: data-uri("papirus/format-number.svg");
 	}
 
 	.fa-list-ul:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-bullet.svg");
+		mask-image: data-uri("papirus/format-bullet.svg");
 	}
 
 	.fa-text-height:before {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/format-font-size.svg");
+		mask-image: data-uri("papirus/format-font-size.svg");
 	}
 }
 
@@ -624,8 +677,8 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 //---------------------------------
 .RichEditor-root .uneditable {
 	.uneditable-remove:before {
-		content: url("mailspring://@{asset_path}/styles/papirus/dummy.svg") !important;
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/cancel.svg");
+		content: data-uri("papirus/dummy.svg") !important;
+		mask-image: data-uri("papirus/cancel.svg");
 		mask-repeat: no-repeat;
 		mask-size: 16px;
 		mask-position: 0px 0px;
@@ -641,8 +694,8 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	right: -1px;
 
 	&:before {
-		content: url("mailspring://@{asset_path}/styles/papirus/dummy.svg");
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/cancel.svg");
+		content: data-uri("papirus/dummy.svg");
+		mask-image: data-uri("papirus/cancel.svg");
 		mask-repeat: no-repeat;
 		mask-size: 16px;
 		mask-position: 0px 0px;
@@ -664,11 +717,11 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	}
 
 	.primary-item img.content-mask {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/send.svg") !important;
+		mask-image: data-uri("papirus/send.svg") !important;
 	}
 
 	.secondary-picker img.content-mask {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/dropdown.svg") !important;
+		mask-image: data-uri("papirus/dropdown.svg") !important;
 	}	
 }
 
@@ -678,24 +731,28 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	height: 16px !important;
 	zoom: 1 !important;
 
-	&[alt="icon-composer-sendlater.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/snoozed.svg") !important;
+	&[alt="icon-composer-sendlater.png"],
+	&[src*="/icon-composer-sendlater@"] {
+		mask-image: data-uri("papirus/snoozed.svg") !important;
 	}
 
 	&[src="mailspring://composer-templates/assets/icon-composer-templates@2x.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/template.svg") !important;
+		mask-image: data-uri("papirus/template.svg") !important;
 	}
 
-	&[alt="icon-composer-attachment.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/attachment.svg") !important;
+	&[alt="icon-composer-attachment.png"],
+	&[src*="/icon-composer-attachment@"] {
+		mask-image: data-uri("papirus/attachment.svg") !important;
 	}
 
-	&[alt="icon-composer-trash.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/trash.svg") !important;
+	&[alt="icon-composer-trash.png"],
+	&[src*="/icon-composer-trash@"] {
+		mask-image: data-uri("papirus/trash.svg") !important;
 	}
 
-	&[alt="icon-composer-dropdown.png"] {
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/dropdown.svg") !important;
+	&[alt="icon-composer-dropdown.png"],
+	&[src*="/icon-composer-dropdown@"] {
+		mask-image: data-uri("papirus/dropdown.svg") !important;
 	}
 }
 
@@ -706,7 +763,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Selected item edit icon
 //---------------------------------
 .nylas-editable-list .items-wrapper .editable-item.selected.with-edit-icon img.edit-icon {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/edit.svg") !important;
+	mask-image: data-uri("papirus/edit.svg") !important;
 	mask-size: 16px !important;
 	mask-position: center !important;
 	zoom: 1 !important;
@@ -726,7 +783,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 		background-color: @accent_fg_color !important;
 		mask-size: 16px !important;
 		mask-repeat: no-repeat !important;
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/account.svg") !important;
+		mask-image: data-uri("papirus/account.svg") !important;
 	}
 
 	.feature-explore-grid .feature {
@@ -741,45 +798,54 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 			mask-size: 16px !important;
 			mask-repeat: no-repeat !important;
 	
-			&[alt="icon-composer-reminders.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/alarm.svg") !important;
+			&[alt="icon-composer-reminders.png"],
+			&[src*="/icon-composer-reminders@"] {
+				mask-image: data-uri("papirus/alarm.svg") !important;
 			}
 	
-			&[alt="toolbar-person-sidebar.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/person.svg") !important;
+			&[alt="toolbar-person-sidebar.png"],
+			&[src*="/toolbar-person-sidebar@"] {
+				mask-image: data-uri("papirus/person.svg") !important;
 			}
 	
-			&[alt="icon-composer-eye.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/eye.svg") !important;
+			&[alt="icon-composer-eye.png"],
+			&[src*="/icon-composer-eye@"] {
+				mask-image: data-uri("papirus/eye.svg") !important;
 			}
 	
-			&[alt="toolbar-templates.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/template.svg") !important;
+			&[alt="toolbar-templates.png"],
+			&[src*="/toolbar-templates@"] {
+				mask-image: data-uri("papirus/template.svg") !important;
 			}
 	
-			&[alt="icon-composer-linktracking.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/format-link.svg") !important;
+			&[alt="icon-composer-linktracking.png"],
+			&[src*="/icon-composer-linktracking@"] {
+				mask-image: data-uri("papirus/format-link.svg") !important;
 			}
 	
-			&[alt="icon-composer-sendlater.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/snoozed.svg") !important;
+			&[alt="icon-composer-sendlater.png"],
+			&[src*="/icon-composer-sendlater@"] {
+				mask-image: data-uri("papirus/snoozed.svg") !important;
 			}
 	
-			&[alt="toolbar-snooze.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/snoozed.svg") !important;
+			&[alt="toolbar-snooze.png"],
+			&[src*="/toolbar-snooze@"] {
+				mask-image: data-uri("papirus/snoozed.svg") !important;
 			}
 	
-			&[alt="icon-toolbar-activity.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/insights.svg") !important;
+			&[alt="icon-toolbar-activity.png"],
+			&[src*="/icon-toolbar-activity@"] {
+				mask-image: data-uri("papirus/insights.svg") !important;
 			}
 	
-			&[alt="pro-feature-translation.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/translate.svg") !important;
+			&[alt="pro-feature-translation.png"],
+			&[src*="/pro-feature-translation@"] {
+				mask-image: data-uri("papirus/translate.svg") !important;
 			}
 		}
 	
 		.popout img {
-			mask-image: url("mailspring://@{asset_path}/styles/papirus/link.svg") !important;
+			mask-image: data-uri("papirus/link.svg") !important;
 			mask-size: 16px !important;
 			width: 16px !important;
 			height: 16px !important;
@@ -793,7 +859,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 // Preferences: Subscription tab
 //------------------------------------------------------------
 .container-identity .identity-content-box .features img.content-dark {
-	mask-image: url("mailspring://@{asset_path}/styles/papirus/check.svg") !important;
+	mask-image: data-uri("papirus/check.svg") !important;
 }
 
 //------------------------------------------------------------
@@ -809,51 +875,62 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 			width: 16px;
 			height: 16px;
 
-			&[alt="inbox.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/inbox.svg") !important;
+			&[alt="inbox.png"],
+			&[src*="/inbox@"] {
+				mask-image: data-uri("papirus/inbox.svg") !important;
 			}
 		
-			&[alt="sent.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/send.svg") !important;
+			&[alt="sent.png"],
+			&[src*="/sent@"] {
+				mask-image: data-uri("papirus/send.svg") !important;
 			}
 		
-			&[alt="drafts.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/drafts.svg") !important;
+			&[alt="drafts.png"],
+			&[src*="/drafts@"] {
+				mask-image: data-uri("papirus/drafts.svg") !important;
 			}
 		
-			&[alt="spam.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/spam.svg") !important;
+			&[alt="spam.png"],
+			&[src*="/spam@"] {
+				mask-image: data-uri("papirus/spam.svg") !important;
 			}
 		
-			&[alt="archive.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/archive.svg") !important;
+			&[alt="archive.png"],
+			&[src*="/archive@"] {
+				mask-image: data-uri("papirus/archive.svg") !important;
 			}
 		
-			&[alt="trash.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/trash.svg") !important;
+			&[alt="trash.png"],
+			&[src*="/trash@"] {
+				mask-image: data-uri("papirus/trash.svg") !important;
 			}
 		
-			&[alt="snoozed.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/snoozed.svg") !important;
+			&[alt="snoozed.png"],
+			&[src*="/snoozed@"] {
+				mask-image: data-uri("papirus/snoozed.svg") !important;
 			}
 		
-			&[alt="starred.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/star.svg") !important;
+			&[alt="starred.png"],
+			&[src*="/starred@"] {
+				mask-image: data-uri("papirus/star.svg") !important;
 			}
 		
-			&[alt="important.png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/important.svg") !important;
+			&[alt="important.png"],
+			&[src*="/important@"] {
+				mask-image: data-uri("papirus/important.svg") !important;
 			}
 		
 			&[alt="all.png"],
-			&[alt=".png"] {
-				mask-image: url("mailspring://@{asset_path}/styles/papirus/folder.svg") !important;
+			&[src*="/all@"],
+			&[alt=".png"],
+			&[src=""] {
+				mask-image: data-uri("papirus/folder.svg") !important;
 			}
 		}
 	
 		& + img {
 			zoom: 1 !important;
-			mask-image: url("mailspring://@{asset_path}/styles/papirus/dropdown.svg") !important;
+			mask-image: data-uri("papirus/dropdown.svg") !important;
 			mask-size: 16px !important;
 			width: 16px !important;
 			height: 16px !important;
@@ -869,8 +946,8 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	background-image: none;
 
 	&::before {
-		content: url("mailspring://@{asset_path}/styles/papirus/dummy.svg");
-		mask-image: url("mailspring://@{asset_path}/styles/papirus/check.svg") !important;
+		content: data-uri("papirus/dummy.svg");
+		mask-image: data-uri("papirus/check.svg") !important;
 		mask-repeat: no-repeat;
 		mask-size: 16px;
 		mask-position: 0px 1px;

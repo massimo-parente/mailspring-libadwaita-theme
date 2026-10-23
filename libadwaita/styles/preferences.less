@@ -219,7 +219,7 @@ body.platform-linux .sheet-toolbar-container[data-id="Preferences"] {
 		border-radius: 6px;
 		
 		&:checked {
-			content: url("mailspring://@{asset_path}/styles/assets/check-symbolic.png");
+			content: data-uri("assets/check-symbolic.png");
 		}
 	}
 
@@ -227,7 +227,7 @@ body.platform-linux .sheet-toolbar-container[data-id="Preferences"] {
 		border-radius: 50%;
 		
 		&:checked {
-			content: url("mailspring://@{asset_path}/styles/assets/radio-symbolic.png");
+			content: data-uri("assets/radio-symbolic.png");
 		}
 	}
 
@@ -749,11 +749,13 @@ body.platform-linux .sheet-toolbar-container[data-id="Preferences"] {
 				padding-top: 48px;
 			}
 
-			img[alt='appearance-scale-small.png'] {
+			img[alt='appearance-scale-small.png'],
+			img[src*="/appearance-scale-small@"] {
 				mask-image: url("../static/images/preferences/appearance/appearance-scale-small@2x.png");
 			}
 
-			img[alt='appearance-scale-big.png'] {
+			img[alt='appearance-scale-big.png'],
+			img[src*="/appearance-scale-big@"] {
 				mask-image: url("../static/images/preferences/appearance/appearance-scale-big@2x.png");
 			}
 		}
